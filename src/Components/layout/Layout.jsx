@@ -1,23 +1,25 @@
-import React from 'react'
-import NavBarC from '../container/navbarcontainer/NavBarC'
-import { Outlet } from 'react-router-dom'
-import RecommendedC from '../container/recommended/RecommendedC'
-import CheckOutC from '../container/checkoutC/CheckOutC'
-
+import React from 'react';
+import NavBarC from '../container/navbarcontainer/NavBarC';
+import { Outlet,useLocation } from 'react-router-dom';
+import HeaderC from '../container/headerC/HeaderC';
 
 function Layout() {
+
+  const location =useLocation();
+  const  hideHeaderAndNavRoutes=['/profile']
+
   return (
     <div>
-        <NavBarC>
-            <main>
-                <Outlet></Outlet>
-            </main>
-        </NavBarC>
-          <RecommendedC></RecommendedC>
-          <CheckOutC></CheckOutC>
+{!hideHeaderAndNavRoutes.includes(location.pathname)
+        &&<>   <HeaderC></HeaderC>
+                <NavBarC />  </>
+}
+      <main>
+        {/* Renders the matched route's content */}
+        <Outlet  />
+      </main>
     </div>
-
-  )
+  );
 }
 
-export default Layout
+export default Layout;

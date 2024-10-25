@@ -3,16 +3,16 @@ import CartProvider from "../cartprovider/CartProvider"; // Assuming CartProvide
 import RecommendedC from "../recommended/RecommendedC";
 import NonVegPizzaC from "../nonvegpizza/NonVegPizzaC";
 import VegPizzaC from "../vegpizza/VegPizzaC";
-import CheckOutC from "../checkoutC/CheckOutC";
+
 
 function HomePageContainer() {
   return (
     <CartProvider>
       <div>
-      
+      <RecommendedC></RecommendedC>
+      <CheckOutC></CheckOutC>
         <NonVegPizzaC />
         <VegPizzaC />
-        <CheckOutC />
       </div>
     </CartProvider>
   );

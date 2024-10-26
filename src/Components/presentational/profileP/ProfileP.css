@@ -5,9 +5,9 @@
     border-radius: 8px;
     padding: 20px;
     position: relative;
-    left: 00px;
+    left: 00;
     background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
   }
   
   /* Styling for user details section */

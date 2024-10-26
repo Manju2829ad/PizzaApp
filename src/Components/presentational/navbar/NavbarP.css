@@ -2,12 +2,12 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: hwb(0 98% 2%);
+    background-color: hwb(0deg 98% 2%);
      padding-top: 50px; 
     width: 100%;
     position: fixed;
     top: 80px; /* Position below the 100px header */
-    left: 0px;
+    left: 0;
     height: 80px;
     z-index: 99;
     margin-top: 50px;
@@ -16,7 +16,7 @@
   
   /* ... rest of the CSS remains the same */
   #navbar::-webkit-scrollbar-thumb {
-    background-color: hsl(119, 76%, 46%);
+    background-color: hsl(119deg 76% 46%);
     border-radius: 5px;
   }
   
@@ -25,7 +25,7 @@
     font-weight: bold;
     color: #080808;
     padding: 8px 16px;
-    background-color: hwb(63 42% 5%);
+    background-color: hwb(63deg 42% 5%);
     border-radius: 10px;
   }
   
@@ -34,20 +34,3 @@
     max-width: 120px;
   }
   
-  /* .pizza-card {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-    width: 250px;
-    text-align: center;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
-  } */
-  
-  /* .pizza-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .header {
-    height: 120px;
-  } */

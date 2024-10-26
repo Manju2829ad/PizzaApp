@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0066cc;
+  background-color: #06c;
   padding: 10px 20px;
   color: white;
   font-family: Arial, sans-serif;
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100px;
   z-index: 100; /* Ensure header stays on top */
@@ -40,7 +40,6 @@
 
 .account {
   display: flex;
-  align-items: center;
   right:50px ;
   align-items: flex-end;
   justify-content: space-between;
@@ -58,7 +57,7 @@
   color: white;
   text-decoration: none;
 }
-.account a:hover{
 
+.account a:hover{
   color: chartreuse;
 }

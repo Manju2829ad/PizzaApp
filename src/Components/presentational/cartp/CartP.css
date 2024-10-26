@@ -3,7 +3,7 @@
     border-radius: 10px;
     width: 300px; /* Adjust the width as per your layout */
     position: absolute; /* Allow it to move with the page */
-   right: 00px; /* Position it 20px from the right side of the content area */
+   right: 00; /* Position it 20px from the right side of the content area */
     top: 200px; /* Adjust the top value as per your layout */
   }
   
@@ -27,7 +27,7 @@
   .cart-item-card {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
     padding: 15px;
     margin-bottom: 20px;
     display: flex;

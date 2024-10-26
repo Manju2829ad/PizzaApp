@@ -1,7 +1,7 @@
 /* SignUp.css */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   background-color: #f0f2f5;
   display: flex;
   justify-content: center;
@@ -14,7 +14,7 @@ body {
   background-color: white;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
   max-width: 500px;
   width: 100%;
   position: relative;
@@ -76,5 +76,5 @@ p {
 input:focus {
   outline: none;
   border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 5px rgb(0 123 255 / 50%);
 }

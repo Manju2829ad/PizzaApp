@@ -11,8 +11,9 @@ phases:
       - npm run build
 post_build:
   commands:
-    - echo "Build completed. Starting S3 sync"
-    - aws s3 sync dist/ s3://reactpizzaapp --region eu-north-1 --delete
+    - echo "Syncing with S3 using KMS encryption"
+    - aws s3 sync dist/ s3://reactpizzaapp --region eu-north-1 --sse aws:kms --delete
+
 
 
 artifacts:

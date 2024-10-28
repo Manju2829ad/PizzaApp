@@ -9,12 +9,11 @@ phases:
     commands:
       - echo "Building the React app"
       - npm run build
-post_build:
-  commands:
-    - echo "Syncing with S3 using KMS encryption"
-    - aws s3 sync dist/ s3://reactpizzaapp --region eu-north-1 --sse aws:kms --delete
-
-
+phases:
+  build:
+    commands:
+- export AWS_DEFAULT_REGION=$AWS_REGION
+      - export AWS_SIGNATURE_VERSION=s3v4
 
 artifacts:
   files:

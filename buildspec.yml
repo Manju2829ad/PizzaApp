@@ -5,15 +5,14 @@ phases:
     commands:
       - echo "Installing dependencies"
       - npm install
+
   build:
     commands:
+      - echo "Setting AWS region and signature version"
+      - export AWS_DEFAULT_REGION=$AWS_REGION
+      - export AWS_SIGNATURE_VERSION=s3v4
       - echo "Building the React app"
       - npm run build
-phases:
-  build:
-    commands:
-- export AWS_DEFAULT_REGION=$AWS_REGION
-      - export AWS_SIGNATURE_VERSION=s3v4
 
 artifacts:
   files:

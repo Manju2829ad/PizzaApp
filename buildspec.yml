@@ -12,7 +12,7 @@ phases:
   post_build:
     commands:
       - echo "Build completed. Starting S3 sync"
-aws s3 sync build/ s3://reactpizzaapp --region eu-north-1 --delete
+      - aws s3 sync build/ s3://reactpizzaapp --region eu-north-1 --delete
 
 artifacts:
   files:
@@ -21,4 +21,3 @@ artifacts:
 cache:
   paths:
     - node_modules/**/*
-
